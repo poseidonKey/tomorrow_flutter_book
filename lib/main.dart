@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tommorow_flutter/disign_pattern_p207.dart';
 import 'package:tommorow_flutter/staggerd_ani_p199.dart';
 import 'package:tommorow_flutter/your_animated_widget_p184.dart';
 
@@ -46,6 +47,17 @@ class MainWidget extends StatelessWidget {
                 );
               },
               child: const Text('Staggerd Sample'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DesignPatternP207(),
+                  ),
+                );
+              },
+              child: const Text('Design pattern'),
             ),
           ],
         ),
